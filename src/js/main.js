@@ -25,6 +25,18 @@ document.addEventListener("DOMContentLoaded", () => {
             }
             const result = await response.json();//konvert response to javascript      
 
+            //sort enddate on jobs
+            result.sort((a,b) => {
+                if (a.enddate && b.enddate) {
+                    return new Date (b.enddate) - new Date (a.enddate);
+                } else if (a.enddate) {
+                    return -1;
+                } else if (b.enddate) {
+                    return 1;
+                }
+                return 0;
+                
+            });
 
             if (jobList) {
                 jobList.innerHTML = ""; //clear joblist
