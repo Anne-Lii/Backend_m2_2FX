@@ -21,9 +21,13 @@
         <div id="liner"></div>
         <div id="container_about">
             <h1>Om uppgiften</h1>   
-            <p>En applikation byggd med express, node.js som listar mina tidigare jobberfarenheter. 
-                På sidan för att Lägga till jobb finns ett formulär som fylls i och vid submit skickas datan iväg till min postgre databas som ligger på Render.com.
-                Därefter skrivs alla jobb i databasen ut till listan på förstasidan. 
+            <p>Denna applikation är byggd med HTML, CSS, JavaScript och Node.js. Den är utformad för att hantera och visa mina tidigare jobberfarenheter med hjälp av en extern API. 
+                På 'Lägg till jobb'-sidan finns ett formulär där användaren kan fylla i detaljer om ett nytt jobb. 
+                När formuläret skickas (submit) valideras och bearbetas datan innan den sparas i min PostgreSQL-databas, som är hostad på Render.com. 
+                Efter datan har sparats, hämtas alla jobb från databasen och visas i en lista på applikationens förstasida. 
+                Jag har skapat valideringsmeddelanden som dyker upp om användaren inte fyller i alla obligatoriska fält. 
+                Dessutom har jag gjort en split på startdate och enddate så att endast datumet visas och inte tidpunkt, vilket gör det mer läsbart. 
+                Slutligen har jag gjort en funktion för att ta bort jobb från listan direkt via applikationen med en "Ta bort jobb" knapp."
                 <br><br>
                 Detta var en svår uppgift som har tagit mycket tid. Jag försökte lägga till en radioknapp i formuläret för att kunna välja ett slutdatum eller klicka i att jobbet var Pågående. 
                 Men jag fick verkligen inte till det att pågående skulle avaktiveras när man valde enddate och tvärtom så jag tog bort det efter att ha suttit med det i flera timmar då det inte var ett krav till uppgiften. 

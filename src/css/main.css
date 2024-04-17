@@ -113,7 +113,7 @@ input#ongoing {
    margin-top: 20px;
 }
 
-/* abour page  */
+/* about page  */
 #container_about {
     width: 90%;
     max-width: 900px;
@@ -155,6 +155,12 @@ font-size: 20px;
     height: 40px;
     animation: spin 1s linear infinite;
 }
+.error-message {
+    color: red;
+    font-size: 0.8em;
+    margin-top: 5px;
+}
+
 
 /* mediaquerys for smaller screens */
 @media (max-width: 600px) {
